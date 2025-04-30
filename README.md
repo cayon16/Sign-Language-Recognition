@@ -27,6 +27,12 @@ This project consists of three main folders: `yolo`, `ML`, and `Deep_learn`, eac
 
 - **`ML/`**  
   (This folder contains the implementation for the first approach: MediaPipe + classical machine learning.)  
+  - `collect_imgs.py`: This file is used to capture images for the dataset.
+  - `create_data.py`: This file is used to extract hand landmark features from images in the ASL alphabet dataset and save the data into a .pickle file for easy use in model training later
+  - `inference_classifier.py`: this file is used to detect and classify hand signs from live webcam feed using a pre-trained machine learning model
+  - `train_classifier.py`: This script trains a Random Forest classifier to recognize hand signs.
+  - `notebook.ipynb`: Contains data preprocessing steps and exploratory analysis.
+11
   - Typically includes scripts to **extract hand landmarks** using MediaPipe.  
   - Uses lightweight classifiers (e.g., SVM, Random Forest) trained on landmark features for sign recognition.
 
@@ -63,5 +69,5 @@ Below are the important links to access pretrained models and datasets used in t
 - **🇩 Main Dataset:** [Download ASL + Custom Dataset](<https://drive.google.com/file/d/11QvvFUdx9NZTRbl2I-5uSmIJa1aiI_w6/view?usp=drive_link>)  
   Combined dataset including the ASL Alphabet dataset from Kaggle and our self-collected hand sign images.
 
-- **🇪 YOLO Finetune Dataset:** [Download YOLO Fine-tuning Images](<E>)  
+- **🇪 YOLO Finetune Dataset:** [Download YOLO Fine-tuning Images](<https://drive.google.com/file/d/1njKLJ8u5ZdN03NEi0pYdm2O4v5xkURdY/view?usp=sharing>)  
   Additional hand images used to finetune the YOLO detection model for better performance on real hands 
